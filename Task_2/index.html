@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en"  data-theme='red'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento&family=Lobster&family=Merienda+One&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+</head>
+<body>
+
+    
+    <div class="theme-btn" id='theme-btn'><i class="fa fa-paint-brush"></i></div>
+    <div class="theme-selector" id='theme-selector'>
+        <h2>Did not enjoy the Theme? <br> Customize it as per your will!</h2>
+        <span id='close-theme'>&times;</span>
+        <div class="color-sliders">
+            <div class="red-slider slider-cont"><input type="range" name="red" id="r-set" min="10" max="245" class='slider' value='0'></div>
+            <div class="green-slider  slider-cont"><input type="range" name="green" id="g-set" min="10" max="245" class='slider' value='180'></div>
+            <div class="blue-slider  slider-cont"><input type="range" name="blue" id="b-set" min="10" max="245" class='slider' value='204'></div>
+        </div>
+    </div>
+
+
+    <header>
+        <div class="nav-ham" id="nav-ham">
+            <div class="nav-ham-line"></div>
+        </div>
+
+        <nav class="nav-bar" id="nav-bar">    
+            <ul class="nav-list">
+
+                <a href="#home" class="nav-link" style="border-bottom-left-radius: 3rem;">
+                    <li class="nav-list-item" style="border-bottom-left-radius: 3rem;">
+                        <i class="fa fa-home"></i> 
+                        <span class="nav-label">Home</span>    
+                    </li>
+                </a>
+                
+                <a href="#about" class="nav-link">
+                    <li class="nav-list-item">
+                            <i class="fa fa-info-circle"></i> 
+                            <span class="nav-label">About</span>
+                    </li>
+                </a>     
+                
+                <a href="#project" class="nav-link">        
+                    <li class="nav-list-item">
+                            <i class="fa fa-rocket"></i> 
+                            <span class="nav-label">Projects</span>
+                    </li>
+                </a>
+
+                <a href="#contact" class="nav-link">        
+                    <li class="nav-list-item">
+                            <i class="fa fa-address-book-o"></i> 
+                            <span class="nav-label">Contact</span>
+                    </li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="home" class=" ">
+            <canvas id="canvas1"></canvas>
+            
+            <div class="content" id='text-content-home'>
+                <div class="text">
+                    <div class="name">
+                        <div class="svg-container">
+                            <h1>Krishna</h1>
+                        </div> 
+                    </div>
+                    
+                    <div class="wrapper">
+                        <div class="static-txt">I am a</div>
+                        <ul class="dynamic-txts">
+                            <li><span>Student</span></li>
+                            <li><span>Competitive Programmer</span></li>
+                            <li><span>Designer</span></li>
+                            <li><span>Developer</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="resume">
+                        <a class='cv-link' href="#">CV</a>
+                        <a class='cv-link' href="#project">Projects</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="about">
+            <h1 class='about-head'><span>Who</span> am I?</h1>
+
+            <div class="about-intro">
+                A Third year undergraduate student at <span>Inderprastha Engineering College, Ghaziabad</span> 
+                pursuing I.T. Engineering with interest lying in various domains
+                from Programming, Quantum physics and Maths to photography and writting.
+                Always keen to learn new stuff and expand the arsenal of knowledge. A self 
+                taught <span>frontend web developer</span> and knows <span>basic machine learning.</span>
+                Extremely fond of competitive programming and has <span>1660 (3 star)</span>
+                rating on <span>codechef</span>.<br><br>
+                Currently learning to use <span>Kali Linux</span> for pentesting.
+            </div>
+            
+
+            <h1 class='about-head'><span>S</span>kills</h1>
+            <div class="skills-btn">
+                <div class='skill-btn active' id="lang">General</div>
+                <div class='skill-btn' id="webd">Web Development</div>
+                <div class='skill-btn' id="ml">Machine Learning</div>
+                <div class='skill-btn' id="tech">Python</div>
+            </div>
+            <div class="skills-cont" id='skills-cont'>
+                <div class='skills-cloud active' id="skills-l"></div>
+                <div class='skills-cloud' id="skills-w"></div>
+                <div class='skills-cloud' id="skills-m"></div>
+                <div class='skills-cloud' id="skills-t"></div>
+            </div>
+        </div>
+
+        <div id="project">
+            <h1 class="project-head">Check out what i am upto</h1>
+
+            <div class="cards-cont">
+                
+                <div class="card-group">
+                    <div class="card">
+                        <div class="card-cover-top"></div>
+                        <div class="card-cover-bottom"></div>
+                        <div class="card-cover-image"><img src="./images/blog.jpg" alt=""></div>
+
+                        <div class="description">
+                            <h2 class="heading">QChat</h2>
+                            <div class="details">
+                                A Django and React based social media app. <br>
+                                You can create account and start posting text or images which will appear in the timelines of people that follow you.
+                                Also, you can see posts of people you follow; Like, dislike or even respost them. 
+                                <br><br>Django REST API is used to establish connection between frontend and backend.
+                            </div>
+                            <div class="link-cont">
+                                <div class="link"><a href="#project" class="link-a" target='_blank'>Source Code</a></div>
+                            </div>
+                            <div class="tags">
+                                <h3 class="tag-head">Tags:</h3>
+                                <ul class="tag-list">
+                                    <li class="tag">Django</li>
+                                    <li class="tag">React</li>
+                                    <li class="tag">Web dev</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-cover-top"></div>
+                        <div class="card-cover-bottom"></div>
+                        <div class="card-cover-image"><img src="./images/pikachu.jpg" alt=""></div>
+
+                        <div class="description">
+                            <h2 class="heading">Pokemon Cart</h2>
+                            <div class="details">CMD Pokemon is a python based terminal(command line) pokemon game with all the features present in a standard GUI game. <br><br>You can go around the map and catch pokemons. Pokemons level up as they gain more experience and they will evolve into a stronger pokemon and learn new attacks as well. You can fight wild pokemons or you can duel with gym leaders to get gym badges. You can visit shops to buy pokeballs and power stones and use them on your pokemons to make them stronger. You may also encounter some legendary pokemons on the way !</div>
+                            <div class="link-cont">
+                                <div class="link"><a href="#project" class="link-a" target='_blank'>Source Code</a></div>
+                            </div>
+                            <div class="tags">
+                                <h3 class="tag-head">Tags:</h3>
+                                <ul class="tag-list">
+                                    <li class="tag">Python</li>
+                                    <li class="tag">OOPs</li>
+                                    <li class="tag">Game Dev</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-group">
+                    <div class="card">
+                        <div class="card-cover-top"></div>
+                        <div class="card-cover-bottom"></div>
+                        <div class="card-cover-image"><img src="./images/quiz.jpg" alt="quiz"></div>
+
+                        <div class="description">
+                            <h2 class="heading">Quizzy</h2>
+                            <div class="details">'Quizzy' is a quizzing platform with 4 difficulty levels. After each level, a detailed summary along with correct answers will be revealed. You can access the leaderboard and see where you stand among the global users. <br><br> Login page has a forgot password feature which lets you reset your password and also prompts the strength of password.</div>
+                            <div class="link-cont">
+                                <div class="link"><a href="#project" class="link-a" target='_blank'>Source Code</a></div>
+                            </div>
+                            <div class="tags">
+                                <h3 class="tag-head">Tags:</h3>
+                                <ul class="tag-list">
+                                    <li class="tag">PHP</li>
+                                    <li class="tag">MySQL</li>
+                                    <li class="tag">Web dev</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-cover-top"></div>
+                        <div class="card-cover-bottom"></div>
+                        <div class="card-cover-image"><img src="./images/flappybird.jpg" alt=""></div>
+
+                        <div class="description">
+                            <h2 class="heading">Flappy Bird</h2>
+                            <div class="details">A flappy bird game written with help of Pygame module of python. Flappy Bird is a tapping game where main objective is to cross as much distance as possible without touching roof, ground or pipes that are randomly generated. <br><br> A NEAT based algorithm is implemented in the game so that computer can learn to play the game itself.</div>
+                            <div class="link-cont">
+                                <div class="link"><a href="#project" class="link-a" target='_blank'>Source Code</a></div>
+                            </div>
+                            <div class="tags">
+                                <h3 class="tag-head">Tags:</h3>
+                                <ul class="tag-list">
+                                    <li class="tag">JS</li>
+                                    <li class="tag">Web dev</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-group">
+                    <div class="card">
+                        <div class="card-cover-top"></div>
+                        <div class="card-cover-bottom"></div>
+                        <div class="card-cover-image"><img src="./images/palindrome.jpg" alt=""></div>
+
+                        <div class="description">
+                            <h2 class="heading">Sum of Palindromes</h2>
+                            <div class="details">An implementation of a research paper by Javier Cilleruelo, Florian Luca and Lewis Baxter proves that any positive integer can be expressed as a sum of three palindrome numbers. The proof is in a form of 42 page algorithm which is implemented in this program. <br><br> The program will ask you to enter a number and display the three palindromes. A flask based web version is also created and the steps to execute are mentioned in the github itself. There is also a test which will compare this algorithm with brute force approach and verifies the correctness.</div>
+                            <div class="link-cont">
+                                <div class="link"><a href="#project" class="link-a" target='_blank'>Source Code</a></div>
+                            </div>
+                            <div class="tags">
+                                <h3 class="tag-head">Tags:</h3>
+                                <ul class="tag-list">
+                                    <li class="tag">Maths</li>
+                                    <li class="tag">Python</li>
+                                    <li class="tag">Flask</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-cover-top"></div>
+                        <div class="card-cover-bottom"></div>
+                        <div class="card-cover-image"><img src="./images/resume.jpg" alt=""></div>
+
+                        <div class="description">
+                            <h2 class="heading">CV Maker</h2>
+                            <div class="details">It is a standard Resume Builder template where you can edit the placeholders and create your job resume and download it in pdf format. You can delete points if they are not applicable or you can add more points and blocks if you wish. The sections on left part of resume are reordable, just drag and drop in your preferable order.</div>
+                            <div class="link-cont">
+                                <div class="link"><a href="#project" class="link-a" target='_blank'>Source Code</a></div>
+                            </div>
+                            <div class="tags">
+                                <h3 class="tag-head">Tags:</h3>
+                                <ul class="tag-list">
+                                    <li class="tag">HTML</li>
+                                    <li class="tag">Javascript</li>
+                                    <li class="tag">Web dev</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-more">
+                <a href="https://github.com/">More on github</a>
+            </div>
+        </div>
+
+        <div id="contact">
+            <h1 class='contact-head'><span>L</span>et's <span>b</span>e <span>i</span>n <span>t</span>ouch</h1>
+            
+            <h2>Follow me on social media <i class="fa fa-long-arrow-down"></i></h2>
+            <div class="social-med">
+                <div class="soc-logo"><a href='https://www.facebook.com/' target='_blank' class="fa fa-facebook-square"></a></div>
+                <div class="soc-logo"><a href='https://github.com/' target='_blank' class="fa fa-github"></a></div>
+                <div class="soc-logo"><a href='https://www.instagram.com/' target='_blank' class="fa fa-instagram"></a></div>
+                <div class="soc-logo"><a href='https://www.linkedin.com/' target='_blank' class="fa fa-linkedin-square"></a></div>
+                <div class="soc-logo"><a href='mailto:krishna.kug070@gmail.com' target='_blank' class="fa fa-envelope-o"></a></div>
+            </div>
+
+            <h2>Or Write me a message</h2>
+
+            <div class="contact-form">
+                <form action="#">
+                    <div class="input-container">
+                        <label class='label' for="name" id='name-lab'>Your Name</label>
+                        <input class='input' type="text" name='name' placeholder="Your Name" id='cont-name' />
+                    </div>
+                    <div class="input-container">
+                        <label class='label' for="email" id='em-lab'>Your Email</label>
+                        <input class='input' type="text" name='email' placeholder="Your Email" id='cont-email' />
+                    </div>
+                    <div class="message-container input-container">
+                        <label for="message" class="label" id='msg-lab'>Your Message</label>
+                        <textarea name="message" id="cont-msg" class="message" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class='submit-btn' name='submit'>Send <i class="fa fa-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="./JS/script.js"></script>
+    <script src="./JS/app.js" defer></script>
+</body>
+</html>
+
